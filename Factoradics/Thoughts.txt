@@ -1,0 +1,25 @@
+class: Permutation
+public:
+	Permutation(string someString)
+	string classString
+private:
+	int factoradic()
+	int factorial(int bigger, int degree)
+
+Permutation(someString)
+	someString.toUpper
+	classString = someString
+
+int factoradic()
+	int i = 0 /*control iterator for primary while loop*/
+	int j /*iterator in for loop*/
+	int bigger /*counts number of letters the current letter is bigger than*/
+	int position = 0 /*position of the permutation in the set's dictionary*/
+	char compare /*char for comparison to other chars in classString*/
+	
+	while (i < classString.size)
+		compare = classString[i]
+		for (j = i+1; j < classString.size; j++) /*j=i+1 for the sake of checking the next char in the string (don't need to compare against itself*/
+			if compare > classString[j]
+				bigger++
+
